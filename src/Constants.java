@@ -1,4 +1,7 @@
 public class Constants {
+    public final static int ENCRYPTION_BTN = 1;
+    public final static int DECRYPTION_BTN = 2;
+    public final static int EXIT_BTN = 3;
     public final static int NEW_KEY_LENGTH = 16;
     public final static int EXIT_STATUS_CODE = 0;
 

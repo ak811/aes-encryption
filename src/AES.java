@@ -25,12 +25,13 @@ public class AES {
             int num = input.nextInt();
             input.nextLine();
 
-            if (num == 3) {
+            if (num == Constants.EXIT_BTN) {
                 System.exit(Constants.EXIT_STATUS_CODE);
                 return;
             }
 
-            System.out.println(num == 1 ? Constants.ENTER_FILE_PATH_FOR_ENCRYPTION_MSG : Constants.ENTER_FILE_PATH_FOR_DECRYPTION_MSG);
+            System.out.println(num == Constants.ENCRYPTION_BTN ?
+                    Constants.ENTER_FILE_PATH_FOR_ENCRYPTION_MSG : Constants.ENTER_FILE_PATH_FOR_DECRYPTION_MSG);
             String filePath = input.nextLine();
 
             System.out.println(Constants.ENTER_THE_KEY_MSG);
@@ -39,13 +40,14 @@ public class AES {
             System.out.println(Constants.ENTER_THE_DESTINATION_FILE_PATH_MSG);
             String destinationFilePath = input.nextLine();
 
-            System.out.println(num == 1 ? Constants.ENCRYPTING_MSG : Constants.DECRYPTING_MSG);
+            System.out.println(num == Constants.ENCRYPTION_BTN ?
+                    Constants.ENCRYPTING_MSG : Constants.DECRYPTING_MSG);
 
             switch (num) {
-                case 1:
+                case Constants.ENCRYPTION_BTN:
                     encryptFile(key, filePath, destinationFilePath);
                     break;
-                case 2:
+                case Constants.DECRYPTION_BTN:
                     decryptFile(key, filePath, destinationFilePath);
                     break;
                 default:
