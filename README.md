@@ -5,7 +5,7 @@
 <br>
 
 ## Overview
-This project implements the Advanced Encryption Standard (AES) algorithm as a symmetrical block cipher algorithm that takes plain text in blocks of 128 bits and converts them to ciphertext using keys of 128, 192, and 256 bits.
+This project implements the Advanced Encryption Standard (AES) algorithm as a symmetrical block cipher algorithm that takes plaintext in blocks of 128 bits and converts them to ciphertext using keys of 128, 192, and 256 bits.
 
 <br>
 
